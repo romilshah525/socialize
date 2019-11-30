@@ -6,9 +6,6 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<title>Chat Application</title>
 		<style>
-			.my-col{
-				border: 1px solid blue;
-			}
 			.my-bg{
 				background-color: #1ebea5;
 			}
@@ -18,14 +15,22 @@
 			.my-pill{
 				background-color: #1ebea5;
 			}
+			.my-received-message{
+				width: 75%;
+				background-color: #f5f77c;
+			}
+			.my-sender-message{
+				width: 75%;
+				background-color: #f7f7f7;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row my-row">
-				<div class="col-4 min-vh-100 pl-0 pr-0 border">
-					<nav class="navbar justify-content-center my-bg text-white">
-						<a class="navbar-brand text-white" href="#"><img src="/images/whatsapp.PNG" width="40" height="40" class="d-inline-block align-top" alt=""><span class="mt-5">WhatsApp</span></a>
+		<div class="container min-vh-100 border mt-0">
+			<div class="row m-4 border">
+				<div class="col-4 border-right pl-0 pr-0">
+					<nav class="navbar navbar-light my-bg justify-content-center">
+						<span class="navbar-brand text-white">WhatsApp</span>
 					</nav>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -40,7 +45,28 @@
 							Morbi leo risus
 							<span class="badge badge-primary badge-pill my-pill">1</span>
 						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							Cras justo odio
+							<span class="badge badge-primary badge-pill my-pill">14</span>
+						</li>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+							Dapibus ac facilisis in
+							<span class="badge badge-primary badge-pill my-pill">2</span>
+						</li>
 						<li class="list-group-item d-flex justify-content-between align-items-center border-bottom my-active">
+							adipisicing elit
+							
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+							consectetur
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+							dolor sit amet
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							Lorem ipsum
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
 							adipisicing elit
 						</li>
 						<li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
@@ -49,18 +75,51 @@
 						<li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
 							dolor sit amet
 						</li>
-						<li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-							Lorem ipsum
-						</li>
 					</ul>
 				</div>
-				<div class="min-vh-100 col-8 my-col border-bottom">
-					<div class="input-group mb-3">
+				<div class="col-8">
+					<div class="row m-1 justify-content-start">
+						<span class="col-md-9 my-received-message p-2 rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cupiditate</span>
+					</div>
+					<div class="row m-1 justify-content-end">
+						<span class="col-md-9 my-sender-message p-2 rounded">ducimus nam fugiat et adipisci pariatur magnam amet rem ab impedit quasi quos. Id!</span>
+					</div>
+					<div class="row m-1 justify-content-start">
+						<span class="col-md-9 my-received-message p-2 rounded">Repellendus quis sint, provident</span>
+					</div>
+					<div class="row m-1 justify-content-end">
+						<span class="col-md-9 my-sender-message p-2 rounded">Deleniti, accusamus .Blanditiis alias ea distinctio sint obcaecati aliquid dolorum rem perspiciatis asperiores!</span>
+					</div>
+					<div class="row m-1 justify-content-end">
+						<span class="col-md-9 my-sender-message p-2 rounded">cupiditate quibusdam nemo necessitatibus aperiam</span>
+					</div>
+					<div class="row m-1 justify-content-start">
+						<span class="col-md-9 my-received-message p-2 rounded">Praesentium porro vitae non</span>
+					</div>
+					<div class="row m-1 justify-content-start">
+						<span class="col-md-9 my-received-message p-2 rounded">Accusantium aliquam ducimus eius neque, qui adipisci</span>
+					</div>
+					<div class="row m-1 justify-content-end">
+						<span class="col-md-9 my-sender-message p-2 rounded">Sequi ab tempora asperiores aperiam necessitatibus velit voluptatum dolores</span>
+					</div>
+					<div class="row m-1 justify-content-start">
+						<span class="col-md-9 my-received-message p-2 rounded">eligendi illo culpa soluta, hic quas. Ut consectetur illum non?</span>
+					</div>
+					<div class="row m-1 justify-content-end">
+						<span class="col-md-9 my-sender-message p-2 rounded">Dignissimos alias assumenda? Dignissimos autem incidunt eveniet officiis, nam iste?</span>
+					</div>
+					<div class="row m-1 justify-content-start">
+						<span class="col-md-9 my-received-message p-2 rounded"> voluptates facilis, facere unde animi velit nesciunt hic.</span>
+					</div>
+					<div class="row m-1 justify-content-end">
+						<span class="col-md-9 my-sender-message p-2 rounded">animi</span>
+					</div>
+					<!-- <div class="input-group mb-3 fixed-bottom">
 						<input type="text" class="form-control" placeholder="Enter Your Message" aria-label="Recipient's username" aria-describedby="button-addon2">
 						<div class="input-group-append">
 							<button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
