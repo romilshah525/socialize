@@ -1,0 +1,21 @@
+.my-bg{
+	background-color: #1ebea5;
+}
+.my-active{
+	background-color: #f4f4f4;
+}
+.my-pill{
+	background-color: #1ebea5;
+}
+.my-received-message{
+	width: 75%;
+	background-color: #f5f77c;
+}
+.my-sender-message{
+	width: 75%;
+	background-color: #f7f7f7;
+}
+.my-img{
+	height: 30px;
+	width: 30px;
+}
