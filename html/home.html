@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="../css/home.css">
 		<title>Chat Application</title>
 	</head>
-	<body onload="loc()">
+	<body onload="loc('#img-31')">
 		<section class="hero">
 			<div class="container">
 				<div class="row">	
@@ -461,8 +461,8 @@
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
-			function loc(){
-				location.replace("http://127.0.0.1:5500/html/home.html"+"#img-41");
+			function loc(param){
+				location.replace("http://127.0.0.1:5500/html/home.html"+param);
 			}
 		</script>
 	</body>
