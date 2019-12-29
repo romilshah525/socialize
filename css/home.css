@@ -201,13 +201,20 @@
 	overflow: auto;
   }
   .search {
-   position: relative;
+   /* position: relative;
    right: -60px;
    top: -40px;
    margin-bottom: -40px;
    border: 2px solid #f4f4f4;	
    width: 100%;
-   overflow: hidden;
+   overflow: hidden; */
+   position: relative;
+    right: 0px;
+    top: 0px;
+    margin-bottom: 0px;
+    border: 2px solid #f4f4f4;
+    width: 100%;
+    overflow: hidden;
   }
   .search input[type="text"] {
    background-color: #fff;
@@ -258,3 +265,6 @@
    font-size: 16px;
    color: #8d8d8d;
   }
+  .my-modal-lg {
+    max-width: 50% !important;
+}
