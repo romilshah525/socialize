@@ -4,12 +4,50 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../css/status.css">
 		<title>Chat Application</title>
 	</head>
 	<body>
 		<div class="container my-margin">
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Cras justo odio</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+						<img src="../images/whatsapp.PNG" alt="" class="rounded mx-auto d-block" style="height: 225px; width: 225px;">
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn my-bg" data-toggle="modal" data-target="#exampleModalCenterNew"><span class="my-white">Next</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container my-margin">
+				<div class="modal fade" id="exampleModalCenterNew" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterNewTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Cras justo odio</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+							<img src="../images/profile.png" alt="" class="rounded mx-auto d-block" style="height: 225px; width: 225px;">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn my-bg my-text" data-dismiss="modal"><span class="my-white">Close</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
 			<div class="card">
 				<div class="card-body">
 					<div class="row">
@@ -22,63 +60,14 @@
 						<div class="col-4 float-right">
 							<form>
 								<div class="form-group">
-								  <input type="file" class="form-control-file" id="exampleFormControlFile1" style="margin-top: 9px;">
-								</div>
+									<input type="file" class="form-control-file inputfile" id="exampleFormControlFile1" style="margin-top: 9px;">
+								</div>  
 							  </form>
 						</div>
 					</div>
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col-6">
-								<img src="../images/profile.png" alt="" srcset="" class="rounded-circle my-img-status">
-								<a href="#">Cras justo odio</a>
-							</div>
-						</div>
-					</li>
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col-6">
-								<img src="../images/profile.png" alt="" srcset="" class="rounded-circle my-img-status">
-								<a href="#">Cras justo odio</a>
-							</div>
-						</div>
-					</li>
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col-6">
-								<img src="../images/profile.png" alt="" srcset="" class="rounded-circle my-img-status">
-								<a href="#">Cras justo odio</a>
-							</div>
-						</div>
-					</li>
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col-6">
-								<img src="../images/profile.png" alt="" srcset="" class="rounded-circle my-img-status">
-								<a href="#">Cras justo odio</a>
-							</div>
-						</div>
-					</li>
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col-6">
-								<img src="../images/profile.png" alt="" srcset="" class="rounded-circle my-img-status">
-								<a href="#">Cras justo odio</a>
-							</div>
-						</div>
-					</li>
-					<li class="list-group-item">
-
-						<div class="row">
-							<div class="col-6">
-								<img src="../images/profile.png" alt="" srcset="" class="rounded-circle my-img-status">
-								<a href="#">Cras justo odio</a>
-							</div>
-						</div>
-					</li>
-					<li class="list-group-item">
+					<li class="list-group-item" data-toggle="modal" data-target="#exampleModalCenter">
 						<div class="row">
 							<div class="col-6">
 								<img src="../images/profile.png" alt="" srcset="" class="rounded-circle my-img-status">
@@ -96,5 +85,10 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script>
+			$('#exampleModalCenterNew').on('shown.bs.modal', function () {
+				$('#exampleModalCenter').modal('hide');
+			});
+		</script>
 	</body>
 </html>
