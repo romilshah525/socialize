@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<mvc:annotation-driven></mvc:annotation-driven>
+	<context:component-scan base-package="com.showme.controller"></context:component-scan>
+
+	<mvc:resources mapping="/resources/**"
+		location="/WEB-INF/resources/" cache-period="31556926" />
+
+	<bean id="internalResourceViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="/WEB-INF/jsps/"></property>
+	<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	
+	<bean id="comment" class="com.showme.beans.Comment"/>
+	<bean id="like" class="com.showme.beans.Like"/>
+	<bean id="post" class="com.showme.beans.Post"/>
+	<bean id="user" class="com.showme.beans.User"/>
+	<bean id="status" class="com.showme.beans.Status"/>
+	<bean id="message" class="com.showme.beans.Message"/>
+	<bean id="notification" class="com.showme.beans.Notification"/>
+	<bean id="requestResponse" class="com.showme.beans.RequestResponse"/>
+	
+	<bean id="postDB" class="com.showme.database.PostDB"/>
+	<bean id="userDB" class="com.showme.database.UserDB"/>
+	<bean id="statusDB" class="com.showme.database.StatusDB"/>
+	<bean id="messageDB" class="com.showme.database.MessageDB"/>
+	<bean id="notificationeDB" class="com.showme.database.NotificationDB"/>
+	<bean id="requestResponseDB" class="com.showme.database.RequestResponseDB"/>
+	
+	<bean id="postService" class="com.showme.services.PostService"/>
+	<bean id="userService" class="com.showme.services.UserService"/>
+	<bean id="statusService" class="com.showme.services.StatusService"/>
+	<bean id="messageService" class="com.showme.services.MessageService"/>
+	<bean id="notificationeService" class="com.showme.services.NotificationService"/>
+	<bean id="requestResponseService" class="com.showme.services.RequestResponseService"/>
+	
+	<bean id="userRecommendationKNN" class="com.showme.recommendation.UserRecommendationKNN"></bean>
+	
+	<bean id="secureData" class="com.showme.security.SecureData"/>
+	
+	
+</beans>

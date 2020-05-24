@@ -1,0 +1,5 @@
+http://localhost:8080/showMe/home?userId=1&postId=0&prev=0&next=1
+
+http://localhost:8080/showMe/seePost?userId=1&postId=52
+
+http://localhost:8080/showMe/exploreSection?userId=14
